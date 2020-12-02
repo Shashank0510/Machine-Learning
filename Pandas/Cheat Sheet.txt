@@ -1,0 +1,19 @@
+len(df)       series + value    	df[df.c == value]
+df.head()     series + series2  	df[(df.c >= value) & (df.d < value)]
+df.tail()     series.notnull()  	df[(df.c < value) | (df.d != value)]
+df.COLUMN     series.isnull()   	df.sort_values('column')
+df['COLUMN']  series.sort_index()	df.sort_values(['column1', 'column2'])
+
+s.str.len()        s.value_counts()
+s.str.contains()   s.sort_index()   df[['column1', 'column2']]
+s.str.startswith() s.plot(...)      df.plot(x='a', y='b', kind='bar')
+
+df.set_index('a').sort_index()        df.loc['value']
+df.set_index(['a', 'b']).sort_index() df.loc[('v','u')]
+df.groupby('column')                  .size() .mean() .min() .max()
+df.groupby(['column1', 'column2'])    .agg(['min', 'max'])
+
+df.unstack()      s.dt.year       df.merge(df2, how='outer', ...)
+df.stack()        s.dt.month      df.rename(columns={'a': 'y', 'b': 'z'})
+df.fillna(value)  s.dt.day        pd.concat([df1, df2])
+s.fillna(value)   s.dt.dayofweek
