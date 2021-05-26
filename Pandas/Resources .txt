@@ -1,0 +1,3 @@
+https://mlcourse.ai/articles/topic1-exploratory-data-analysis-with-pandas/
+https://github.com/guipsamora/pandas_exercises/
+https://github.com/TomAugspurger/effective-pandas
